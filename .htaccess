@@ -1,0 +1,12 @@
+DirectoryIndex public/index.php
+
+ErrorDocument 401 http://commissiongj.ml/
+ErrorDocument 402 http://commissiongj.ml/
+ErrorDocument 403 http://commissiongj.ml/
+ErrorDocument 404 http://commissiongj.ml/
+ErrorDocument 500 http://commissiongj.ml/
+
+Options +FollowSymlinks
+
+RewriteEngine On
+RewriteRule ^([a-z0-9/]+)$ /?/$1 [L]
